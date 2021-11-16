@@ -26,9 +26,11 @@ ces <- read_csv(here("data", "ces3demographics.csv")) %>%
 
 ### Visualizing the data
 ```{r}
-# using gglot and geom_point to creat a scatterplot of % white by EJ score
+# using gglot and geom_point to create a 2D hexbin plot of % white by EJ score
 ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) +
-  geom_point()
+  labs(y = "CES 3.0 Score", 
+       x = "Percent White") +
+  geom_hex()
 ```
 
 
