@@ -6,8 +6,8 @@ output: html_document
 ---
 
 ### Setup
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r setup, include=TRUE, message = FALSE, warning = FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
 
 #Attach packages
 library(tidyverse)
@@ -34,6 +34,9 @@ ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) +
   scale_fill_gradient(low = "lemonchiffon", high = "darkgoldenrod4") +
   theme_minimal()
 ```
+
+**Figure 1.** 2D hexbin plot of CalEnviroScreen 3.0 Indicator Scores for census tracts relative to the white percentage of the population in those tracts.  
+
 
 
 
