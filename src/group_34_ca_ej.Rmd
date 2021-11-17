@@ -37,6 +37,8 @@ ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) +
 
 **Figure 1.** 2D hexbin plot of CalEnviroScreen 3.0 Indicator Scores for census tracts relative to the white percentage of the population in those tracts.  
 
+Figure 1 indicates that census tracts with a smaller percentage of white residents tend to have higher CES 3.0 scores, indicating that these communities bear a higher pollution burden than census tracts with a larger percentage of white residents. 
 
+### Data Citation
 
-
+California Office of Environmental Health Hazard Assessment. (2018). "CalEnviroScreen 3.0." California Environmental Protection Agency.
